@@ -1,0 +1,25 @@
+{
+  "name": "js_refactoring",
+  "version": "0.0.1",
+  "authors": [
+    "Flavio Granero <maltempe@gmail.com>"
+  ],
+  "description": "Projeto exemplo para a palestra do Café com Dev",
+  "website": "https://github.com/flaviogranero/js_refactoring",
+  "keywords": [
+    "js",
+    "refactoring"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "backbone-events-standalone": "~0.2.4"
+  }
+}
