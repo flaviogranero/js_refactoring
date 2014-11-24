@@ -10,3 +10,10 @@ Setup
     $ node server.js
 
 Navegue até http://localhost:4000
+
+Testes
+------
+
+Para executar a suite de testes jasmine, basta acessar:
+
+    http://localhost:4000/SpecRunner.html

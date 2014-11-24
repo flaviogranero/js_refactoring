@@ -12,32 +12,32 @@ Comments.prototype.add = function(comment) {
   });
 };
 
-var NewCommentView = function(options) {
+var CommentFormView = function(options) {
   this.$el = options.el;
   this.$textarea = this.$el.find('textarea');
   this.comments = options.comments;
   this.comments.on('add', this.clearInput, this);
   this.$el.on("submit", $.proxy(this.addComment, this));
 };
-NewCommentView.prototype.addComment = function(e) {
+CommentFormView.prototype.addComment = function(e) {
   e.preventDefault();
   this.comments.add(this.$textarea.val());
 };
-NewCommentView.prototype.clearInput = function() {
+CommentFormView.prototype.clearInput = function() {
   this.$textarea.val('');
 };
 
-var CommentsView = function(options) {
+var CommentListView = function(options) {
   this.$el = options.el;
   this.comments = options.comments;
   this.comments.on('add', this.appendComment, this);
 };
-CommentsView.prototype.appendComment = function(text) {
+CommentListView.prototype.appendComment = function(text) {
   this.$el.append('<li>' + text + '</li>');
 };
 
 $(document).ready(function() {
   var comments = new Comments();
-  new NewCommentView({ el: $('#comment-form'), comments: comments });
-  new CommentsView({ el: $('#comment-list'), comments: comments });
+  new CommentFormView({ el: $('#comment-form'), comments: comments });
+  new CommentListView({ el: $('#comment-list'), comments: comments });
 });
