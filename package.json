@@ -1,11 +1,26 @@
 {
   "name": "js-refactoring",
+  "description": "A simple application to introduce a 'JS refactoring for TDD' talk",
   "version": "0.0.1",
-  "private": true,
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "3.3.4"
-  }
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flaviogranero/js_refactoring"
+  },
+  "keywords": [
+    "javascript",
+    "refactoring",
+    "tdd",
+    "jasmine"
+  ],
+  "license": "MIT"
 }

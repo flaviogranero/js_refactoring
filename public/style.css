@@ -21,3 +21,20 @@ input[type=submit]{
   padding: 10px;
   border-top: 1px solid #ccc;
 }
+
+.github-ribbon {
+  background-color: #121621;
+  top: 3.2em;
+  right: -3.7em;
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 1px #1d212e inset, 0 0 2px 1px white inset, 0 0 1em #888888;
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  padding: 0.6em 3.5em;
+  position: fixed;
+  font: bold 0.82em sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px -1px 8px rgba(0, 0, 0, 0.6);
+  user-select: none; 
+}

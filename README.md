@@ -7,7 +7,7 @@ Setup
 -----
 
     $ npm install
-    $ node server.js
+    $ npm start
 
 Navegue até http://localhost:4000
 

@@ -1,0 +1,6 @@
+{
+  "name": "JS Refactoring",
+  "description": "A simple application to introduce a 'JS refactoring for TDD' talk",
+  "repository": "https://github.com/flaviogranero/js_refactoring",
+  "keywords": ["javascript", "refactoring", "tdd", "jasmine"]
+}
